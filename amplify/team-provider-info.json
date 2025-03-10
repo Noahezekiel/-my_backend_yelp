@@ -10,6 +10,11 @@
       "StackName": "amplify-mybackendyelp-dev-64e0f",
       "StackId": "arn:aws:cloudformation:eu-north-1:535002885853:stack/amplify-mybackendyelp-dev-64e0f/782aaf40-fda1-11ef-bcc1-06385ff4dd7d",
       "AmplifyAppId": "ddjxv6muhefpr"
+    },
+    "categories": {
+      "auth": {
+        "mybankendyelpe06c03e9": {}
+      }
     }
   }
 }
