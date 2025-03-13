@@ -2,21 +2,23 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 10px 20px;
-    background-color: #d32323; /* Yelp-style red */
+    background-color: #d32323;
     color: white;
     font-size: 18px;
+    gap: 20px;
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  .logo-image {
+    height: 70px; /* Adjust the height as needed */
+    /* Additional styling as necessary */
   }
   
   .links {
     display: flex;
-    gap: 15px;
+    gap: 50px;
+    margin-right: auto;
   }
   
   .links a {
@@ -33,6 +35,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    
   }
   
   .sign-out-button {
@@ -47,5 +50,43 @@
   
   .sign-out-button:hover {
     background-color: #f8d7da;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 500px;
+  }
+  
+  .search-container input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    background: transparent;
+  }
+  
+  .search-container input:focus {
+    outline: none;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #d32323;
+    transition: color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    color: #a71b1b;
+  }
+  
+  .search-button svg {
+    vertical-align: middle;
   }
   
