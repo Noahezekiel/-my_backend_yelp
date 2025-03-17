@@ -1,4 +1,7 @@
+// // Profile.js
+
 import React, { useState } from "react";
+import { getCurrentUser, updateUserAttributes } from "@aws-amplify/auth";
 
 function Profile({ user, onUpdate }) {
   const [formData, setFormData] = useState({
@@ -7,14 +10,27 @@ function Profile({ user, onUpdate }) {
   });
 
   const [isEditing, setIsEditing] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleUpdate = () => {
-    onUpdate(formData); // Call the update function
-    setIsEditing(false);
+  const handleUpdate = async () => {
+    try {
+      const currentUser = await getCurrentUser();
+      await updateUserAttributes(currentUser, {
+        name: formData.name,
+        email: formData.email,
+      });
+
+      setMessage("Profile updated successfully!");
+      setIsEditing(false);
+      onUpdate(); 
+    } catch (error) {
+      console.error("Error updating profile:", error);
+      setMessage("Failed to update profile.");
+    }
   };
 
   if (!user) {
@@ -24,6 +40,8 @@ function Profile({ user, onUpdate }) {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h2>User Profile</h2>
+
+      {message && <p style={{ color: "green" }}>{message}</p>}
 
       {isEditing ? (
         <>

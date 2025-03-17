@@ -1,6 +1,7 @@
+// // NavBar.js
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "./assets/logo.jpeg";
 
@@ -29,7 +30,7 @@ function NavBar({ signOut, user, handleSearch }) {
           placeholder="Search businesses..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          onKeyDown={handleKeyDown} // Updated from onKeyPress
+          onKeyDown={handleKeyDown}
         />
         <button className="search-button" onClick={handleSearchClick}>
           <svg 
@@ -46,9 +47,7 @@ function NavBar({ signOut, user, handleSearch }) {
 
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/profile" className="profile-link">Profile</Link>
+        {user && <Link to="/profile" className="profile-link">Profile</Link>}
       </div>
 
       <div className="user-section">

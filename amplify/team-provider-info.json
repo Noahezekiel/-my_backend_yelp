@@ -17,6 +17,12 @@
       },
       "api": {
         "mybankendyelp": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "ddjxv6muhefpr",
+          "type": "manual"
+        }
       }
     }
   }
