@@ -2,21 +2,47 @@
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+This project aims to build a backend service for a Yelp-like application using AWS Amplify. The challenge is to ensure smooth authentication, GraphQL API integration, and hosting while maintaining scalability and security.
 
 ## Description
-TODO - How have you solved the problem?
+My Backend Yelp is a React-based web application powered by AWS Amplify. It integrates authentication with AWS Cognito, uses GraphQL for API interactions, and is deployed on AWS Amplify Hosting. The project is designed to allow creation of account, users can login and update profile (optional) efficiently.
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+git clone https://git.us.qwasar.io/my_backend_yelp_180058_owhebp/my_backend_yelp.git
+cd my_backend_yelp
+
+2. Install dependencies:
+npm install
+
+3. Configure AWS Amplify:
+amplify pull
+
+4. Start the development server:
+npm start
+
 
 ## Usage
-TODO - How does it work?
-```
-./my_project argument1 argument2
-```
+==To use the application, visit the hosted URL:
+
+https://dev.ddjxv6muhefpr.amplifyapp.com
+
+==Running the Build
+To create an optimized production build, run:
+
+npm run build
+
+==Deployment
+To publish updates, use:
+
+amplify publish
+
+
 
 ### The Core Team
+Developer: Noah Ezekiel
 
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
