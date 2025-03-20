@@ -5,7 +5,10 @@
 This project aims to build a backend service for a Yelp-like application using AWS Amplify. The challenge is to ensure smooth authentication, GraphQL API integration, and hosting while maintaining scalability and security.
 
 ## Description
-My Backend Yelp is a React-based web application powered by AWS Amplify. It integrates authentication with AWS Cognito, uses GraphQL for API interactions, and is deployed on AWS Amplify Hosting. The project is designed to allow creation of account, users can login and update profile (optional) efficiently.
+My Backend Yelp is a React-based web application powered by AWS Amplify. It integrates authentication with AWS Cognito, uses GraphQL for API interactions, and is deployed on AWS Amplify Hosting. The project is designed to allow creation of account, users can: 
+==login and update profile (optional) efficiently.
+==Add Business (Restaurant)
+==View Business (Restaurant)
 
 ## Installation
 To set up the project locally, follow these steps:
