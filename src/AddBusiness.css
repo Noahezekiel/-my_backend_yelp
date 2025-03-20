@@ -1,0 +1,57 @@
+.add-business-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-business-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-business-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-business-container .form-group {
+  margin-bottom: 15px;
+}
+
+.add-business-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.add-business-container input,
+.add-business-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d32323;
+  border-radius: 4px;
+}
+
+.add-business-container textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.add-business-container button {
+  padding: 12px;
+  background-color: #d32323;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-business-container button:hover {
+  background-color: #a71b1b;
+}

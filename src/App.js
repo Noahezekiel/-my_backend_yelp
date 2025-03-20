@@ -1,5 +1,3 @@
-// // App.js
-
 import React, { useState } from "react";
 import { Amplify } from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -8,6 +6,8 @@ import "@aws-amplify/ui-react/styles.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Profile from "./Profile";
+import AddBusiness from "./AddBusiness"; 
+import ViewBusinesses from "./ViewBusiness"; 
 
 Amplify.configure(awsconfig);
 
@@ -37,6 +37,8 @@ function App({ signOut, user }) {
       <Routes>
         <Route path="/" element={<Home />} />
         {user && <Route path="/profile" element={<Profile user={user} onUpdate={() => console.log("Profile Updated")} />} />}
+        <Route path="/add-business" element={<AddBusiness />} /> 
+        <Route path="/businesses" element={<ViewBusinesses />} />
       </Routes>
     </Router>
   );

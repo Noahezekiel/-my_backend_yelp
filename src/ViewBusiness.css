@@ -1,0 +1,40 @@
+.view-businesses-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-businesses-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.view-businesses-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-businesses-container .business-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.view-businesses-container .business-item strong {
+  font-size: 1.1em;
+}
+
+.view-businesses-container .business-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.view-businesses-container .business-item a:hover {
+  text-decoration: underline;
+}
